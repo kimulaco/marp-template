@@ -1,6 +1,9 @@
 {
-    "markdown.marp.themes": [
-        "./src/style/main.css"
-    ],
-    "markdown.marp.enableHtml": true,
+  // Prettier
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+
+  // Marp
+  "markdown.marp.themes": ["./src/style/main.css"],
+  "markdown.marp.enableHtml": true
 }

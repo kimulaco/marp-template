@@ -3,80 +3,80 @@
 @import 'uncover';
 
 :root {
-    --app-color-main: #f0c654;
-    --app-color-sub: #2d8eff;
-    --app-color-white: #fff;
-    --app-color-black: #000;
-    --app-color-lightgray: #929292;
-    --app-color-darkgray: #929292;
+  --app-color-main: #f0c654;
+  --app-color-sub: #2d8eff;
+  --app-color-white: #fff;
+  --app-color-black: #000;
+  --app-color-lightgray: #929292;
+  --app-color-darkgray: #929292;
 
-    --app-section-frame-size: 1em;
+  --app-section-frame-size: 1em;
 
-    --color-background: var(--app-color-white);
-    /* --color-background-code: #ccc; */
-    /* --color-background-paginate: rgba(128, 128, 128, 0.05); */
-    --color-foreground: var(--app-color-black);
-    /* --color-highlight: #99c; */
-    /* --color-highlight-hover: #aaf; */
-    /* --color-highlight-heading: #99c; */
-    /* --color-header: #bbb; */
-    /* --color-header-shadow: transparent; */
+  --color-background: var(--app-color-white);
+  /* --color-background-code: #ccc; */
+  /* --color-background-paginate: rgba(128, 128, 128, 0.05); */
+  --color-foreground: var(--app-color-black);
+  /* --color-highlight: #99c; */
+  /* --color-highlight-hover: #aaf; */
+  /* --color-highlight-heading: #99c; */
+  /* --color-header: #bbb; */
+  /* --color-header-shadow: transparent; */
 }
 
 section {
-    position: relative;
-    justify-content: flex-start;
-    align-items: flex-start;
-    text-align-last: left;
-    padding: var(--app-section-frame-size) calc(var(--app-section-frame-size) * 3);
-    line-height: 1.6;
+  position: relative;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align-last: left;
+  padding: var(--app-section-frame-size) calc(var(--app-section-frame-size) * 3);
+  line-height: 1.6;
 }
 
 section::before {
-    content: "";
-    display: block;
-    background-color: transparent;
-    width: calc(100% - (var(--app-section-frame-size) * 2));
-    height: calc(100% - (var(--app-section-frame-size) * 2));
-    margin: var(--app-section-frame-size);
-    box-shadow: 0 0 0 var(--app-section-frame-size) var(--app-color-main);
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    pointer-events: none;
+  content: '';
+  display: block;
+  background-color: transparent;
+  width: calc(100% - (var(--app-section-frame-size) * 2));
+  height: calc(100% - (var(--app-section-frame-size) * 2));
+  margin: var(--app-section-frame-size);
+  box-shadow: 0 0 0 var(--app-section-frame-size) var(--app-color-main);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  pointer-events: none;
 }
 
 section.cover {
-    align-items: center;
-    justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 h1 {
-    align-self: center;
+  align-self: center;
 }
 
 h2 {
-    align-self: center;
-    font-size: 1.2em;
-    line-height: 2;
+  align-self: center;
+  font-size: 1.2em;
+  line-height: 2;
 }
 
 ul,
 ol {
-    margin-left: 0;
+  margin-left: 0;
 }
 
 .profile {
-    display: flex;
+  display: flex;
 }
 
 .profile .left {
-    padding: 0 1em 0 0;
+  padding: 0 1em 0 0;
 }
 
 .profile .left img {
-    width: 6em;
-    border-radius: 0.25em;
-    overflow: hidden;
+  width: 6em;
+  border-radius: 0.25em;
+  overflow: hidden;
 }
